@@ -103,3 +103,20 @@ span.highlight {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 //@import "highlights";
 //@import "svg-icons";
+
+// CSS for scrollbar adapted from https://github.com/kkhetarpal/kkhetarpal.github.io/blob/master/stylesheet.css#L418
+#scroll {
+    position: absolute;
+    white-space: normal;
+    top: 0px;
+    left: 0px;
+}
+#oScroll {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: auto;
+    height: 325px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
