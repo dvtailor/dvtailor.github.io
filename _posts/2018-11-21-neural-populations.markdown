@@ -3,7 +3,7 @@ layout: post
 title:  "Unconscious Biases in Neural Populations Coding Multiple Stimuli"
 date:   2018-11-21 23:59:59 +00:00
 image: /images/neural-populations.png
-categories: research
+categories: research_predoc
 author: "Dharmesh Tailor"
 authors: "Sander Keemink, <strong>Dharmesh Tailor</strong>, Mark van Rossum"
 venue: "Neural Computation"

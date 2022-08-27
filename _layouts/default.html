@@ -67,6 +67,7 @@
         </table>
         
         <!-- Scrollbar code adapted from https://github.com/kkhetarpal/kkhetarpal.github.io/blob/master/index.html#L200 -->
+        <!-- TODO: should be dynamically generated from markdown files -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
@@ -98,7 +99,7 @@
                       <strong>Sept 20, 2021</strong>: Joined the <a href="https://amlab.science.uva.nl/">Amsterdam Machine Learning Lab</a> as a PhD candidate supervised by <a href="https://enalisnick.github.io/">Eric Nalisnick</a>
                   </p>
                   <p>
-                    <strong>March 10, 2021</strong>: Talk on <a href="/pres/mem-exp/riken_seminar_march2021.pdf">Identifying Memorable Experiences of Learning Machines</a> at the <a href="https://aip.riken.jp/video/aip-open-seminar-16/">RIKEN AIP Open Seminar</a> (virtual)
+                    <strong>March 10, 2021</strong>: Talk on <a href="/docs/riken_seminar_march2021.pdf">Identifying Memorable Experiences of Learning Machines</a> at the <a href="https://aip.riken.jp/video/aip-open-seminar-16/">RIKEN AIP Open Seminar</a> (virtual)
                   </p>
                   <p>
                     <strong>Sept 9, 2019</strong>: Participated in the <a href="https://aip.riken.jp/news/berlin190910/">Joint Workshop of the Berlin Big Data Center, Berlin Center of Machine Learning and RIKEN AIP</a> in Berlin
@@ -117,31 +118,125 @@
           </tr>
         </tbody></table>
         
-
+        <!-- Talks -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research</h2>
-              <p>
-                I’m currently interested in variational inference, kernel methods (including Gaussian processes) and reinforcement learning. Previously I have worked on topics in optimal control/trajectory optimization and computational neuroscience.
-              </p>
+              <h1>Talks</h1>
             </td>
           </tr>
         </table>
         
-        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'talk' %}
           <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Past Research</h2>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <h2>{{post.title}}</h2>
+              <br>
+              {% if post.venue_link %}
+              <h3><a href={{post.venue_link}}>{{post.venue}}</a></h3>
+              {% else %}
+              <h3>{{post.venue}}</h3>
+              {% endif %}
+              , {{ post.date | date: "%Y" }} <!-- TODO: more detailed date -->
+              <br>
+              {% if post.info %}
+              <em>{{post.info}}</em>
+              <br>
+              {% endif %}
+              {% if post.video %}
+              <a href="{{post.video}}">video</a> /
+              {% endif %}
+              {% if post.slides %}
+              <a href="{{post.slides}}">slides</a> /
+              {% endif %}
+              <p></p>
+              {{ post.excerpt }}
             </td>
           </tr>
-        </table> -->
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+        
+        <!-- Research papers -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h1>Papers</h1>
+              <!-- <p>
+                Fill current research interest.
+              </p> -->
+            </td>
+          </tr>
+        </table>
         
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'research' %}
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <h2>{{post.title}}</h2>
+              <br>
+              {{post.authors}}
+
+              <br>
+              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              <br>
+              {% if post.paper %}
+              <a href="{{post.paper}}">paper</a> /
+              {% endif %}
+              {% if post.arxiv %}
+              <a href="{{post.arxiv}}">arxiv</a> /
+              {% endif %}
+              {% if post.video %}
+              <a href="{{post.video}}">video</a> /
+              {% endif %}
+              {% if post.code %}
+              <a href="{{post.code}}">code</a> /
+              {% endif %}
+              {% if post.poster %}
+              <a href="{{post.poster}}">poster</a> /
+              {% endif %}
+              <!-- {% if post.slides %}
+              <a href="{{post.slides}}">slides</a> /
+              {% endif %} -->
+              <p></p>
+              {{ post.excerpt }}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <!-- <h3>Research (pre-doctoral)</h3> -->
+              <p>
+                Below are papers I published whilst at the European Space Agency (2017-2018) and University of Edinburgh (2016-2017), focusing on optimal control/trajectory optimization and computational neuroscience respectively.
+              </p>
+            </td>
+          </tr>
+        </table>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'research_predoc' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
@@ -160,20 +255,20 @@
               {% if post.arxiv %}
               <a href="{{post.arxiv}}">arxiv</a> /
               {% endif %}
-              <!-- {% if post.video %}
+              {% if post.video %}
               <a href="{{post.video}}">video</a> /
-              {% endif %} -->
+              {% endif %}
               {% if post.code %}
               <a href="{{post.code}}">code</a> /
               {% endif %}
-              <!-- {% if post.poster %}
+              {% if post.poster %}
               <a href="{{post.poster}}">poster</a> /
-              {% endif %} -->
+              {% endif %}
               <!-- {% if post.slides %}
               <a href="{{post.slides}}">slides</a> /
               {% endif %} -->
               <p></p>
-              {{ post.excerpt }}
+              <!-- {{ post.excerpt }} -->
             </td>
           </tr>
           {% endif %}

@@ -3,7 +3,7 @@ layout: post
 title:  "On the Stability Analysis of Deep Neural Network Representations of an Optimal State-Feedback"
 date:   2020-07-10 23:59:59 +00:00
 image: /images/stability.png
-categories: research
+categories: research_predoc
 author: "Dharmesh Tailor"
 authors: "Dario Izzo, <strong>Dharmesh Tailor</strong>, Thomas Vasileiou"
 venue: "IEEE Transactions on Aerospace and Electronic Systems"

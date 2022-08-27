@@ -3,7 +3,7 @@ layout: post
 title:  "Learning the Optimal State-Feedback via Supervised Imitation Learning"
 date:   2019-09-04 23:59:59 +00:00
 image: /images/imitation.png
-categories: research
+categories: research_predoc
 author: "Dharmesh Tailor"
 authors: "<strong>Dharmesh Tailor</strong>, Dario Izzo"
 venue: "Astrodynamics (Springer)"
