@@ -223,6 +223,7 @@
               <br>
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
               <br>
+              {% if post.venue2 %}<em>{{post.venue2}}</em><br>{% endif %}
               {% if post.paper %}
               <a href="{{post.paper}}">paper</a> /
               {% endif %}
