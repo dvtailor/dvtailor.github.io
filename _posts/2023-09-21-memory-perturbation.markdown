@@ -8,7 +8,7 @@ author: "Dharmesh Tailor"
 authors: "Peter Nickl, Lu Xu*, <strong>Dharmesh Tailor*</strong>, Thomas Möllenhoff, Emtiyaz Khan"
 venue: "37th Conference on Neural Information Processing Systems (NeurIPS)"
 venue2: "ICML 2023 Workshop on Principles of Duality for Modern Machine Learning"
-paper: https://dp4ml.github.io/assets/pdf/MemoryPerturbation.pdf
+arxiv: https://arxiv.org/abs/2310.19273
 ---
 
-Understanding model's sensitivity to its training data is crucial not only for safe and robust operation but also for future adaptations. We present the memory-perturbation equation (MPE) which relates model’s sensitivity to perturbation in its training data. Derived using Bayesian principles, the MPE unifies existing influence measures, generalizes them to a wide-variety of models and algorithms, and unravels useful properties regarding sensitivity. Our empirical results show that sensitivity estimates obtained during training can faithfully predict generalization on unseen test data and avoid the need for expensive retraining. The equation is useful for future research on robust and adaptive learning.
+We present the Memory-Perturbation Equation (MPE) which relates model's sensitivity to perturbation in its training data. Derived using Bayesian principles, the MPE unifies existing sensitivity measures, generalizes them to a wide-variety of models and algorithms, and unravels useful properties regarding sensitivities. Our empirical results show that sensitivity estimates obtained during training can be used to faithfully predict generalization on unseen test data.
