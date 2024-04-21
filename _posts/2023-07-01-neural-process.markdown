@@ -9,6 +9,7 @@ authors: "<strong>Dharmesh Tailor</strong>, Emtiyaz Khan, Eric Nalisnick"
 venue: "39th Conference on Uncertainty in Artificial Intelligence (UAI)"
 venue2: "5th Workshop on Tractable Probabilistic Modeling at UAI 2022"
 paper: https://proceedings.mlr.press/v216/tailor23a.html
+arxiv: https://arxiv.org/abs/2306.15169
 poster: /docs/poster_uai23.pdf
 ---
 
