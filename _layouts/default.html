@@ -80,6 +80,9 @@
                 <div class="panel-body" id="oScroll" >
                 <div id="scroll">
                 <p>
+                    <strong>May 3, 2024</strong>: Received <a href="https://virtual.aistats.org/virtual/2024/awards_detail">Student Paper Highlight</a> award for oral paper at <a href="https://aistats.org/aistats2024/">AISTATS 2024</a>
+                </p>    
+                <p>
                     <strong>March 18, 2024</strong>: Poster presentation at <a href="https://sites.google.com/view/dl2024/">Deep Learning: Theory, Applications, and Implications workshop</a> in Tokyo
                 </p>
                 <p>
@@ -198,14 +201,12 @@
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
               <br>
               {% if post.venue2 %}<em>{{post.venue2}}</em><br>{% endif %}
+              {% if post.award %}<span style="color: red;">{{post.award}}</span><br>{% endif %}
               {% if post.paper %}
               <a href="{{post.paper}}">paper</a> /
               {% endif %}
               {% if post.arxiv %}
               <a href="{{post.arxiv}}">arxiv</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
               {% endif %}
               {% if post.code %}
               <a href="{{post.code}}">code</a> /
@@ -213,9 +214,12 @@
               {% if post.poster %}
               <a href="{{post.poster}}">poster</a> /
               {% endif %}
-              <!-- {% if post.slides %}
+              {% if post.slides %}
               <a href="{{post.slides}}">slides</a> /
-              {% endif %} -->
+              {% endif %}
+              {% if post.video %}
+              <a href="{{post.video}}">video</a> /
+              {% endif %}
               <p></p>
               {{ post.excerpt }}
             </td>
