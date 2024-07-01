@@ -7,7 +7,7 @@ categories: research
 author: "Dharmesh Tailor"
 authors: "<strong>Dharmesh Tailor</strong>, Aditya Patra, Rajeev Verma, Putra Manggala, Eric Nalisnick"
 venue: "27th International Conference on Artificial Intelligence and Statistics (AISTATS)"
-award: "Oral presentation (40 out of 546 accepted papers) & Student Paper Highlight award"
+award: "Oral presentation & Outstanding Student Paper award (top-1% of accepted papers)"
 paper: https://proceedings.mlr.press/v238/tailor24a.html
 arxiv: https://arxiv.org/abs/2403.02683
 code: https://github.com/dvtailor/meta-l2d
