@@ -3,7 +3,7 @@ on:
   pull_request:
   push:
     branches:
-      - main
+      - master
 jobs:
   build-and-deploy:
     if: github.event_name != 'pull_request'
