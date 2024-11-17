@@ -10,6 +10,13 @@ Remember to change permissions of GITHUB_TOKEN; see [here](https://docs.github.c
 - Run `export NODE_OPTIONS=--openssl-legacy-provider` to fix an error after running `yarn dev`
 - Run `yarn` followed by `yarn dev`
 
+May prefer to build static site locally (observed different behaviour to development mode above); this can be done as follows:
+```
+yarn clean
+yarn build
+http-server dist/
+```
+`http-server` needs to be installed using `npm`.
 
 ## Acknowledgements
 
