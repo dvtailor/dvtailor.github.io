@@ -11,3 +11,4 @@ package.json
 tn/
 favicon.ico
 .jekyll-cache
+dist
