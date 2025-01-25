@@ -4,6 +4,7 @@ pageClass: home-page
 
 ## Past News
 
+- [09/2023] Accepted paper at [NeurIPS 2023](https://nips.cc/Conferences/2023) on The Memory-Perturbation Equation
 - [08/2023] Poster presentation at [UAI 2023](https://www.auai.org/uai2023/) in Pittsburgh
 - [06/2023] Two accepted papers at the [ICML 2023 Workshop on Principles of Duality for Modern Machine Learning](https://dp4ml.github.io/)
 - [06/2023] Participating in the [1st Bayes-Duality Workshop](https://bayesduality.github.io/workshop/) in Japan between June 15-27

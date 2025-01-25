@@ -4,6 +4,21 @@ pageClass: home-page
 
 ## Publications
 
+<ProjectCard image="/images/approx-fullcp.png">
+
+  **<p style="font-size:16px; ">Approximating Full Conformal Prediction for Neural Network Regression with Gauss-Newton Influence</p>**
+  **<u>Dharmesh Tailor</u>**, Alvaro Correia, Eric Nalisnick, Christos Louizos
+  
+  *<span style="font-size:14px">13th International Conference on Learning Representations (ICLR)</span>*, <span style="font-size:14px">2025</span>
+  
+  [paper](https://openreview.net/forum?id=vcX0k4rGTt) /
+  
+  <!-- <p>&nbsp;</p> -->
+  
+  <p style="font-size:14px; padding-top:0.5rem">In this work, we construct prediction intervals for neural network regressors post-hoc without held-out data. This is achieved by approximating the full conformal prediction method (full-CP). Whilst full-CP nominally requires retraining the model for every test point and candidate label, we propose to train just once and locally perturb model parameters using Gauss-Newton influence to approximate the effect of retraining. On standard regression benchmarks and bounding box localization, we show the resulting prediction intervals are locally-adaptive and often tighter than those of split-CP.</p>
+
+</ProjectCard>
+
 <ProjectCard image="/images/l2d_meta.png">
 
   **<p style="font-size:16px; ">Learning to Defer to a Population: A Meta-Learning Approach</p>**
