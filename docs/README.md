@@ -16,7 +16,7 @@ socials:
     icon: /icons/twitter.svg
     link: https://twitter.com/dtailor17
 
-bio: 3rd-year PhD Student @ AMLab, University of Amsterdam
+bio: 4th-year PhD Student @ AMLab, University of Amsterdam
 email: d.v.tailor [ AT ] uva.nl
 ---
 
